@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+   
+
+    <title>Fortune Teller</title>
+<img src="Akinator.png" alt="pretend theres an image here" width="300"/>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Fortune Teller
+    </h1>
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <label for="namefield">Name:</label>
+      <input type="text" id="namefield" name="name" placeholder="Your name" required>
+     <br>
+      <label for="questionfield">Question:</label>
+      <input type="text" id="questionfield" name="question" placeholder="A yes or no question" required>
+     <br>
+   <br>
+      <h3>Who is this question for?</h3>
+      <input id="OP1" type="radio" name="me" value="1" required>
+      <label for="OP1">Myself</label> 
+     <br>
+      <input id="OP2" type="radio" name="me" value="1" required>
+      <label for="OP2">A Friend</label>
+    <br> 
+      <input id="OP3" type="radio" name="me" value="1" required>
+      <label for="OP3">Someone I like</label> 
+    <br>
+       <input id="OP4" type="radio" name="me" value="1" required>
+      <label for="OP4">Someone I despise</label>
+    <br>
+<h2> You understand that the consequences will totally be true.</h2>
+      <input id="understand" type="checkbox" id="agree" name="agree" value="1" required>
+      <label for="understand">I understand the magic and how it will be used for.</label>
+   <br>
+  <br>
+      <input type="submit">
+    </form>
+    <div id="fortune"></div>
+  </body>
+</html>
